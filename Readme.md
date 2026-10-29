@@ -1,8 +1,14 @@
 # E-commerce Sales & Customer Analytics
 
+A data analytics portfolio project using MySQL and Power BI to explore retail transactions, analyze sales performance, understand customer purchasing behavior, and identify business trends.
+
 ## Project Overview
 
-This project analyzes e-commerce transaction data to understand sales performance, customer behavior, order activity, and product performance. MySQL was used for data inspection and SQL analysis, while Power BI was used to build an interactive dashboard.
+This project analyzes the UCI Online Retail dataset to uncover insights into sales, customers, products, and geographic performance. SQL is used for data quality checks and exploratory analysis, while Power BI is used to build an interactive dashboard with key performance indicators and visualizations.
+
+## Project Type
+
+Data Analytics · Business Intelligence
 
 ## Objectives
 
@@ -87,17 +93,16 @@ The current dashboard reports the following approximate figures:
 | Total Orders | 22K |
 | Unique Customers | 4,372 |
 
-## Note
-Gross Sales excludes canceled invoices, nonpositive quantities, and nonpositive unit prices.
-Net Transaction Value includes signed transaction values, including returns and cancellations.
-Monetary values are reported in the dataset's units; the dataset does not explicitly specify a currency column.
+### Note
+Gross sales excludes canceled invoices and rows with nonpositive quantities or unit prices. Signed transaction value includes positive and negative transaction values. Monetary figures are reported in the dataset's units.
 
-Additional observations:
+## Additional observations:
 
-- The United Kingdom is the leading country by gross sales.
-- The Netherlands, EIRE, Germany, and France are among the other leading markets.
-- Sales vary across months, with a noticeable increase toward the end of the displayed 2011 period.
+- The United Kingdom accounts for approximately 84% of the dataset's signed transaction value.
+- The dataset contains 4,372 unique customers with recorded customer IDs.
+- Approximately 22,000 distinct non-canceled invoice numbers were identified.
 - Some high-value stock codes represent postage or other transaction charges rather than ordinary products.
+- The analysis identified missing customer information, missing product descriptions, canceled invoices, returns, and nonpositive prices.
 
 These results should be interpreted according to the calculation definitions below.
 
@@ -115,18 +120,27 @@ The displayed figures are rounded. The source dataset does not include an explic
 
 ## Dashboard Preview
 
+The interactive Power BI dashboard summarizes sales performance, order activity, customer reach, and country-level trends.
+
 ![E-commerce Sales Dashboard](Images/Dashboard.png)
 
+## Dashboard Features
+
+- KPI cards for Gross Sales, Net Transaction Value, Total Orders, and Unique Customers
+- Top 10 countries by gross sales
+- Monthly gross sales trend
+- Top 10 stock codes by gross sales
+- Country-wise gross sales summary
+- Interactive slicers for country, product, and customer
 
 ## Skills Demonstrated
 
-- Data analysis using SQL and Power BI
-- Data quality checks and validation
-- Exploratory data analysis
-- DAX measures and calculated columns
-- KPI creation and dashboard design
-- Sales, customer, country, and time-based analysis
-- Communicating business insights through visualization
+- **SQL & MySQL:** Data quality checks, filtering, aggregation, date conversion, and exploratory analysis
+- **Power BI:** Interactive dashboards, KPI cards, charts, tables, and slicers
+- **DAX:** Calculated columns and measures for sales, orders, and customer metrics
+- **Data Cleaning:** Identifying missing values, canceled invoices, returns, and invalid business values
+- **Business Analysis:** Evaluating geographic sales distribution, customer activity, and monthly trends
+- **Data Visualization:** Presenting findings through an interactive business intelligence dashboard
 
 ## Future Improvements
 
