@@ -115,7 +115,7 @@ The displayed figures are rounded. The source dataset does not include an explic
 
 ## Dashboard Preview
 
-![E-commerce Sales Dashboard](dashboard.png)
+![E-commerce Sales Dashboard](Images/dashboard.png)
 
 
 ## Skills Demonstrated
